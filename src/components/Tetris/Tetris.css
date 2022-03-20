@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 47vh 1fr;
     grid-gap: 10px;
+    padding-bottom: 25px;
 }
 
 .Info-Column {

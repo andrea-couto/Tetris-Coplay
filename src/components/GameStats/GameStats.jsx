@@ -1,12 +1,15 @@
 import React from 'react'
 import './GameStats.css';
 
-const GameStats = ({ gameStats }) => {
+const GameStats = ({ gameStats, playerNumber }) => {
     const { level, points, linesCompleted, linesPerLevel } = gameStats;
     const linesToLevel = linesPerLevel - linesCompleted;
 
   return (
     <ul className='GameStats'>
+        <li>Player</li>
+        <li className='value'>{playerNumber}</li>        
+
         <li>Level</li>
         <li className='value'>{level}</li>
 

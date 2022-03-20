@@ -7,7 +7,7 @@ import { usePlayer } from '../../hooks/usePlayer';
 import './Tetris.css';
 import GameController from '../GameController/GameController';
 
-const Tetris = ({ rows, columns, setGameOver}) => {
+const Tetris = ({ rows, columns, setGameOver, playerNumber}) => {
     const [gameStats, addLinesCleared] = useGameStats();
     const [player, setPlayer, resetPlayer ] = usePlayer();
     const [board, setBoard] = useBoard({ 
@@ -20,10 +20,12 @@ const Tetris = ({ rows, columns, setGameOver}) => {
   return (
       <div className='Tetris'>
           <Board board={board}/>
+
           <div className='Info-Column'>
-          <Previews tetrominoes={player.tetrominoes}/>
-          <GameStats gameStats={gameStats}/>
+            <Previews tetrominoes={player.tetrominoes}/>
+            <GameStats gameStats={gameStats} playerNumber={playerNumber}/>
           </div>
+
           <GameController
             board={board}
             gameStats={gameStats}
