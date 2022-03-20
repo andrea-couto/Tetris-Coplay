@@ -1,0 +1,52 @@
+.BoardCell {
+    width: auto;
+    position: relative;
+}
+
+.tetromino {
+    border-top: 3px solid rgba(255, 255, 255, 0.1);
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    border-right: 3px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .tetromino .Sparkle {
+    position: absolute;
+    z-index: 10;
+    width: 80%;
+    height: 80%;
+    left: -2px;
+    top: -2px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .tetromino.ghost {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  .tetromino.ghost .Sparkle {
+    opacity: 0;
+  }
+  
+  .tetromino__i {
+    background-color: #e57193;
+  }
+  .tetromino__j {
+    background-color: #b73a20;
+  }
+  .tetromino__l {
+    background-color: #bf843a;
+  }
+  .tetromino__o {
+    background-color: #4d4922;
+  }
+  .tetromino__s {
+    background-color: #439432;
+  }
+  .tetromino__t {
+    background-color: #1a5846;
+  }
+  .tetromino__z {
+    background-color: #3db2b8;
+  }
+

@@ -1,0 +1,9 @@
+.Board {
+    display: grid;
+    grid-gap: 0px;
+    height: 94vh;
+    width: 47vh;
+    background: black;
+    border: 5px solid #fcfcfc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }

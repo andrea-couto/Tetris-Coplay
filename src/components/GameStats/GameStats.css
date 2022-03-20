@@ -1,0 +1,15 @@
+.GameStats {
+    width: 22vw;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    font-size: small;
+    margin-bottom: 0;
+  }
+  
+  .GameStats .value {
+    font-size: large;
+    margin-bottom: 0.5em;
+    color: #00e8d8;
+  }
+  
